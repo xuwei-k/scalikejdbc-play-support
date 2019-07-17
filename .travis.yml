@@ -25,11 +25,6 @@ cache:
     - $HOME/.ivy2/cache
     - $HOME/.sbt/launchers
 
-scala:
-  - 2.12.8
-  - 2.11.12
-  - 2.13.0
-
 script:
   - sbt ++${TRAVIS_SCALA_VERSION} test
   - git diff --exit-code # check scalariform

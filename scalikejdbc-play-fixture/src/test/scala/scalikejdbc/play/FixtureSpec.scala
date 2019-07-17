@@ -43,8 +43,9 @@ class FixtureSpec extends Specification with BeforeAfterEach {
   }
 
   "Fixture" should {
-
     "has #upScript" in {
+      println(java.nio.charset.Charset.defaultCharset())
+      sys.exit(9)
       val expected =
         """|drop table users if exists;
            |create table users (
